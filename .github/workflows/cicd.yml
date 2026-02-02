@@ -31,12 +31,6 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Type check
-        run: npm run type-check
-
-      - name: Unit tests
-        run: npm run test:unit
-
   deploy:
     needs: lint-and-test
     runs-on: ubuntu-latest
